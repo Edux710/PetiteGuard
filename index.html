@@ -9,39 +9,80 @@
     <!--  Meta tags para SEO -->
     <meta name="author" content="Eduardo de Oliveira">
     <meta name="keyword" content="cão, gato, pet, saúde, pelos, patas">
+    <!-- Inclui icone de favoritos -->
+    <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Petite Guarda</title>
 </head>
 
 <body>
+    <div id="warp">
+        <header>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logotipo de Petite Guard">
+            </a>
+            <h1>Petite Guard</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="sobre.html">sobre</a></li>
+                    <li><a href="servicos.html">serviços</a></li>
+                    <li><a href="contato.html">contato</a></li>
 
-    <header>
-        <a href="index.html">
-            <img src="img/logo.png" alt="Logotipo de Petite Guard">
-        </a>
-        <h1>Petite Guard</h1>       
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="sobre.html">sobre</a></li>
-                <li><a href="servicos.html">serviços</a></li>
-                <li><a href="contato.html">contato</a></li>
 
 
+                </ul>
+            </nav>
+        </header>
 
-            </ul>
-        </nav>
-    </header>
+        <main>
+            <article>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
 
-    <main>
+            </article>
+            <aside>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
 
-    </main>
 
-    <footer>
-        <div id="andar1">andar1</div>
-        <div id="andar2">Coisa do andar 2</div>
-    </footer>
+            </aside>
 
+        </main>
+
+        <footer>
+            <!-- Primeiro andar - Licensa-->
+            <div id="andar1">andar1</div>
+
+            <!-- Acesso à página inicial-->
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <!-- Licensa-->
+            <div> &copy; Copyright 2025 Petite Guarda
+            </div>
+            <!-- Acesso ao topo da página-->
+            <a href="#wrap">
+                <i class="fa-solid fa-circle-up"></i>
+            </a>
+            <!-- Segundoandar links-->
+            <div id="andar2">
+                <!-- Menu com nossas redes sociais-->
+                <nav>
+                    <!--A tag ul cria uma lista não ordenada-->
+                    <ul>
+                        <!-- A tag i serve para devifinir um item na lista, a função target serve para fazer com que o link disposto na lista seja aberto em outra guia, a ausência do mesmo fará que o link feche sua págna e abra no lugar -->
+                        <li><a href="https://facebook.com/petiteguard" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                            facebook
+                        </a></li>
+                        <li><a href="https://instagram.com/petiteguard" target="_blank"> 
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
