@@ -10,14 +10,16 @@ html, body, #wrap {
 }
 
 html, body, #wrap {
-     background-color: aqua;
+     background-color:aliceblue;
      position: relative;
      margin: 0;
      padding: 0;
      width: 100%;
      height: 100%;
  }
- #wrap {}
+ #wrap {
+    margin: auto;
+ }
 
  header{
      background-color: rgb(114, 114, 114);
@@ -47,3 +49,23 @@ list-style: none;
      justify-content: space-between;
  }
  
+ .footer-andar-1 i {
+    color:#00ffd5
+ }
+
+ .footer-andar-1 i:hover {
+    color:hsl(189, 98%, 39%)
+ }
+ .footer-andar-2 ul a {
+    color: aliceblue;
+    text-decoration: none;
+ }
+ .footer-andar-2 ul a:hover {
+    color: rgb(72, 255, 0);
+}
+
+ .footer-andar-2 ul {
+    line-height: 2;
+
+ }
+
