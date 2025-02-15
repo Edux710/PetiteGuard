@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <title>Petite Guarda</title>
+    <title>Petite Guarda - Faça contato</title>
 
 </head>
 
@@ -80,16 +80,43 @@
             </nav> -->
 
 <!-- Usando sticky-footer para empurrar o rodapé  para o final da página -->
-<main class="container flex-grow-1 d-flex">
-    <div class="row d-flex flex-grow-1">
+<main class="container flex-grow-1">
+    <div class="row d flex-grow-1 d-flex">
         <article class="col-12 col-md-9  flex-grow-1">
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim iusto voluptas nostrum non, ea earum, accusantium in itaque asperiores nemo sunt, obcaecati rem expedita quo cumque suscipit tenetur quibusdam illum!
+            <h2>Faça contato</h2>
+            <p> O formulário abaixo para entrar em contato conosco.</p>
+            <form action="processa.html" method="get" id="formContato">
 
+                <p>
+                    <label for="campoNome">Nome:</label>
+                    <input type="text" name="campoNome" id="campoNome" placeholder="Seu nome completo" minlength="3" required>
+                </p>
 
+                <p>
+                    <label for="campoEmail">E-mail:</label>
+                    <input type="email" name="campoEmail" id="campoEmail" placeholder="Seu e-mail" required>
+
+                </p>
+
+                <p>
+                    <label for="campoAssunto">Assunto:</label>
+                    <input type="text" name="campoAssunto" id="campoAssunto" placeholder="Assunto da mensagem" minlength="5" required>
+                </p>
+
+                <p>
+                    <label for="campoMensagem">Mensagem:</label>
+                    <textarea name="campoMensagem" id="campoMensagem" placeholder="Digite sua mensagem" minlength="5" required></textarea>
+                </p>
                 
+                <p>
+                    <button type="submit">Enviar mensagem</button>
+                    <!--small>Clique somente uma vez</small-->
+                </p>
+                </form>
+
 
             </article>
-            <aside class="col-12 col-md-3 p-3">
+            <aside class="col-12 col-md-4">
                 <h2>Aside</h2>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
 

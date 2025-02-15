@@ -69,3 +69,62 @@ list-style: none;
 
  }
 
+/*
+* Estilização do Formulário de contato 
+*/
+
+#formContato {
+ display: block;
+   padding: 1rem; /* Espaçamento interno */
+   margin: auto;
+   border-radius:.8px;
+   border:1px solid black ;
+   background-color: rgb(114, 114, 114);
+
+}
+
+#formContato label {
+   display: block;
+   padding: .25rem .5rem;
+
+}
+
+#formContato input, 
+#formContato textarea {
+width: 100%; /* Largura total */
+background-color: aliceblue;  /* Cor de fundo */
+border: #00ffd5; /* Cor da borda */
+border-radius: .5rem;   /* Borda arredondada */
+border-bottom: 3px solid #00dbe2; /* Cor da borda inferior */
+
+}
+
+#formContato textarea {
+   height: 6rem; /* Altura do campo de texto */
+   height: vertical; /* Permite redimensionar a altura */
+
+}
+
+#formContato button {
+   background-color: rgb(136, 135, 135); /* Cor de fundo */
+   color: white; /* Cor do texto */
+   border: none; /* Remove a borda */
+   border-radius: .3rem; /* Borda arredondada */
+   padding:  .5rem 1rem; /* Espaçamento interno */
+   pointer-events: none; /* Desabilita o botão */
+}
+
+#formContato input:valid,
+#formContato textarea:valid {
+   background-color: white;
+   border: 1px solid #0084ff; /* Cor da borda */
+   border-radius: .3rem; /* Borda arredondada */
+   border-bottom: 3px solid #0084ff; /* Cor da borda inferior */
+
+}
+/* Botão para o formulário for valido */
+#formContato:valid button {
+   pointer-events: all; /* Habilita o botão */
+   background-color: #0084ff; /* Cor de fundo */
+   cursor: pointer;
+}
