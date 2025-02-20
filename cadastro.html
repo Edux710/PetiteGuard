@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <title>Petite Guarda</title>
+    <title>Petite Guarda - Faça contato</title>
 
 </head>
 
@@ -79,22 +79,73 @@
                 </ul>
             </nav> -->
 
-        <!-- Usando sticky-footer para empurrar o rodapé  para o final da página -->
-        <main class="container flex-grow-1 d-flex">
-            <div class="row d flex-grow-1 d-flex">
-                <article class="col-12 col-md-9  flex-grow-1">
+<!-- Usando sticky-footer para empurrar o rodapé  para o final da página -->
+<main class="container flex-grow-1">
+    <div class="row d flex-grow-1 d-flex">
+        <article class="col-12 col-md-9  flex-grow-1">
+            <h2>Adicione os dados do seu pet</h2>
+            <p> Preencha os dados aqui.</p>
+            <form action="processa.html" method="get" id="formContato">
 
-                    <h2>Seus dados estão sendo procesados!</h2>
-                    <p><em>Obrigado.</em></p>
+                <p>
+                    <label for="campoNomePet">Nome:</label>
+                    <input type="text" name="campoNomePet" id="campoNomePet" placeholder="Nome do pet" minlength="3" required>
+                </p>
+
+                <p>
+                    <label for="Espécie">Espécie:</label>
+                    <input type="Especie" name="Especie" id="Especie" placeholder="Espécie do Pet" required>
+
+                </p>
+
+                <p>
+                    <label for="Raça">Raça do Pet (Opicional):</label>
+                    <input type="text" name="Raça" id="Raça" placeholder="Raça do Pet" >
+                </p> 
+                
+                <p>
+                    <label for="Sexo">Sexo:</label>
+                    <select name="Sexo" id="Sexo" required>
+                        <option value="" >Selecione o sexo</option>
+                        <option value="Macho">Macho</option>
+                        <option value="Fêmea">Fêmea</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="campoPorte">Porte do Pet:</label>
+                    <select name="Porte" id="Porte" required >
+                        <option value="" >Selecione o porte</option>
+                        <option value="Pequeno">Pequeno</option>
+                        <option value="Médio">Médio</option>
+                        <option value="Grande">Grande</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="Data">Data de nacimento do Pet:</label>
+                    <input type="date" name="Data" id="Data" placeholder="Data" required>
+                </p> 
+
+                <p>
+                    <label for="características">Características:</label>
+                    <textarea name="características" id="características" placeholder="Digite as características físicas do seu Pet" minlength="5" required></textarea>
+                </p>
+                
+                <p>
+                    <button type="submit">Enviar Formulário</button>
+                    <!--small>Clique somente uma vez</small-->
+                </p>
+                </form>     
 
 
+            </article>
+            <aside class="col-12 col-md-4">
+                <h2>Aside</h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
 
 
-                </article>
-                <aside class="col-12 col-md-4">
-                    <h2>,</h2>
-                </aside>
-
+            </aside>
 
         </main>
 
@@ -106,7 +157,7 @@
                     <i class="fa-solid fa-house fa-2x fa-fw"></i>
                 </a>
                 <!-- Licensa -->
-                <div class="flex-grow-1 text-center align-content-center">&copy; 2025 Petite Guarda</div>
+                <div class="flex-grow-1 text-center align-content-center">&copy; 2025 Petite Guard</div>
                 <!-- Acesso ao topo da página -->
                 <a href="#wrap" class="p-1">
                     <i class="fa-solid fa-circle-up fa-2x fa-fw"></i>
@@ -137,20 +188,20 @@
                 <!-- Menu com links importantes -->
                 <nav>
                     <ul class="list-unstyled">
-
+                    
                         <li><a href="contatos.html">
                                 <i class="fa-solid fa-message"></i> Faça contato
                             </a></li>
                         <li><a href="sobre.html">
                                 <i class="fa-solid fa-circle-info"></i> Sobre o site
                             </a></li>
-                        <li><a href="empresa.html">
+                            <li><a href="empresa.html">
                                 <i class="fa-solid fa-circle-info"></i> Sobre a empresa
                             </a></li>
                         <li><a href="privacidade.html">
                                 <i class="fa-solid fa-lock"></i> Privacidade
                             </a></li>
-                    </ul>
+                </ul>
                 </nav>
 
 

@@ -33,15 +33,12 @@ html, body, #wrap {
  }
 
  header img {
-     display: block;
-     width: 4rem;
-     height: auto;
 
  }
  header h1 {
-     flex-grow: 1;
-     margin: 0;
-     margin-left : 1rem;
+     flex-grow: 1; /* Cresce conforme o espaço disponível */
+     margin: 0;  /* Remove a margem */
+     margin-left : 1rem; /* Margem à esquerda */
  }
  header nav ul {
 list-style: none;
@@ -93,9 +90,9 @@ list-style: none;
 #formContato textarea {
 width: 100%; /* Largura total */
 background-color: aliceblue;  /* Cor de fundo */
-border: #00ffd5; /* Cor da borda */
+border: #ffa600; /* Cor da borda */
 border-radius: .5rem;   /* Borda arredondada */
-border-bottom: 3px solid #00dbe2; /* Cor da borda inferior */
+border-bottom: 3px solid #ffa600; /* Cor da borda inferior */
 
 }
 
@@ -109,7 +106,7 @@ border-bottom: 3px solid #00dbe2; /* Cor da borda inferior */
    background-color: rgb(136, 135, 135); /* Cor de fundo */
    color: white; /* Cor do texto */
    border: none; /* Remove a borda */
-   border-radius: .3rem; /* Borda arredondada */
+   border-radius: .5rem; /* Borda arredondada */
    padding:  .5rem 1rem; /* Espaçamento interno */
    pointer-events: none; /* Desabilita o botão */
 }
