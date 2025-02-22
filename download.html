@@ -56,13 +56,14 @@
                             </ul>
                         </li>
                     </ul>
-                    <!-- Espaço entre os itens e o último ícone -->
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="procurar.html">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                <span class="d-inline d-sm-none">PROCURAR</span>
-                            </a>
+                   <!-- Espaço entre os itens e o último ícone -->
+                   <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="procurar.html"
+                            onclick="document.getElementById('dialogFormBusca').showModal(); return false;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="d-inline d-sm-none">PROCURAR</span>
+                        </a>
                         </li>
                     </ul>
                 </div>
@@ -80,23 +81,34 @@
             </nav> -->
 
 <!-- Usando sticky-footer para empurrar o rodapé  para o final da página -->
-<main class="container flex-grow-1">
-    <div class="row d flex-grow-1 d-flex">
-        <article class="col-12 col-md-9  flex-grow-1">
-            <h2>Oops ainda não temos link para download</h2>
-            <p> ------ </p>
-     
+<main class="container flex-grow-1 d-flex">
+    <div class="row d-flex flex-grow-1">
+        <article class="col-12 col-md-9 flex-grow-1 p-3">
+            <h2>Downloads</h2>
+            <p>Baixe nossos materiais e aplicativos para cuidar melhor do seu pet!</p>
+            
+            <div class="download-section">
+                <h3>Aplicativo Animal Guard</h3>
+                <p>Baixe o aplicativo Animal Guard para Android e iOS.</p>
+                <a href="downloads/AnimalGuard.apk" class="btn btn-primary" download>Baixar para Android</a>
+                <a href="https://apps.apple.com/app/animal-guard/id123456789" class="btn btn-primary">Baixar para iOS</a>
+            </div>
 
-
-            </article>
-            <aside class="col-12 col-md-4">
-                <h2>Aside</h2>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
-
-
-            </aside>
-
-        </main>
+            <div class="download-section mt-4">
+                <h3>Guia de Cuidados</h3>
+                <p>Baixe nosso guia completo de cuidados para cães e gatos.</p>
+                <a href="downloads/GuiaDeCuidados.pdf" class="btn btn-primary" download>Baixar Guia de Cuidados</a>
+            </div>
+        </article>
+        <aside class="col-12 col-md-3 p-3">
+            <div class="social-slide">
+                <h3>Contatos Oficiais!</h3>
+            </div>   
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
+            <ul class="list-unstyled"></ul>
+        </aside>
+    </div>
+</main>
 
         <footer class="text-bg-dark">
             <!-- Primeiro andar - Licensa -->
@@ -157,6 +169,28 @@
             </div>
         </footer>
     </div>
+
+    <!-- Modal e popup com formulário de busca -->
+    <dialog id="dialogFormBusca" class="pt-3 pb-3 rounded-2 border-0">
+
+
+        <button id="closeDialog" class="float-end border-0 bg-transparent"><i class="fa-solid fa-xmark"></i></button>
+        <h5>Procurar</h5>
+        <form action="procurar.html" method="get" class="input-group">
+            <input type="search" name="q" class="form-control">
+            <button type="submit" class="btn" style="background-color: grey; color: white;"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </dialog>
+
+    <!-- Script para fechar o moidal -->
+    <script>
+        document.getElementById("closeDialog").addEventListener("click", () => {
+            document.getElementById("dialogFormBusca").close(); // Fecha o diálogo
+        });
+    </script>
+    
+
 </body>
 
 </html>

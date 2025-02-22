@@ -144,3 +144,27 @@ border-radius: .5rem;   /* Borda arredondada */
 border-bottom: 3px solid #ffa600; /* Cor da borda inferior */
 
 }
+
+/* Botão para o formulário válído */
+#formContato:valid button {
+   pointer-events: all;
+   /* Habilita o clique no botão */
+   background-color: steelblue;
+   cursor: pointer;
+}
+
+
+
+dialog button:hover {
+   background-color: orangered;
+}
+
+/* Escurece o fundo da página com o dialog */
+dialog::backdrop {
+   background: rgba(0, 0, 0, 0.5);
+}
+
+.form-control:focus {
+   box-shadow: none !important;
+   border-color: none !important; /* Mantém a borda padrão */
+}
