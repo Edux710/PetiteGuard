@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <title>Petite Guarda</title>
+    <title>Petite Guarda - Faça contato</title>
 
 </head>
 
@@ -56,14 +56,14 @@
                             </ul>
                         </li>
                     </ul>
-                    <!-- Espaço entre os itens e o último ícone -->
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="procurar.html"
-                                onclick="document.getElementById('dialogFormBusca').showModal(); return false;">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                <span class="d-inline d-sm-none">PROCURAR</span>
-                            </a>
+                   <!-- Espaço entre os itens e o último ícone -->
+                   <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="procurar.html"
+                            onclick="document.getElementById('dialogFormBusca').showModal(); return false;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="d-inline d-sm-none">PROCURAR</span>
+                        </a>
                         </li>
                     </ul>
                 </div>
@@ -80,26 +80,35 @@
                 </ul>
             </nav> -->
 
-        <!-- Usando sticky-footer para empurrar o rodapé  para o final da página -->
-        <main class="container flex-grow-1 d-flex">
-            <div class="row d-flex flex-grow-1">
-                <article class="col-12 col-md-9  flex-grow-1">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim iusto voluptas nostrum non, ea earum,
-                    accusantium in itaque asperiores nemo sunt, obcaecati rem expedita quo cumque suscipit tenetur
-                    quibusdam illum!
+<!-- Usando sticky-footer para empurrar o rodapé  para o final da página -->
+<main class="container flex-grow-1 d-flex">
+    <div class="row d-flex flex-grow-1">
+        <article class="col-12 col-md-9 flex-grow-1 p-3">
+            <h2>Downloads</h2>
+            <p>Baixe nossos materiais e aplicativos para cuidar melhor do seu pet!</p>
+            
+            <div class="download-section">
+                <h3>Aplicativo Animal Guard</h3>
+                <p>Baixe o aplicativo Animal Guard para Android e iOS.</p>
+                <a href="downloads/AnimalGuard.apk" class="btn btn-primary" download>Baixar para Android</a>
+                <a href="https://apps.apple.com/app/animal-guard/id123456789" class="btn btn-primary">Baixar para iOS</a>
+            </div>
 
-
-
-
-                </article>
-                <aside class="col-12 col-md-3 p-3">
-                    <h2>Aside</h2>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
-
-
-                </aside>
-
-        </main>
+            <div class="download-section mt-4">
+                <h3>Guia de Cuidados</h3>
+                <p>Baixe nosso guia completo de cuidados para cães e gatos.</p>
+                <a href="downloads/GuiaDeCuidados.pdf" class="btn btn-primary" download>Baixar Guia de Cuidados</a>
+            </div>
+        </article>
+        <aside class="col-12 col-md-3 p-3">
+            <div class="social-slide">
+                <h3>Contatos Oficiais!</h3>
+            </div>   
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
+            <ul class="list-unstyled"></ul>
+        </aside>
+    </div>
+</main>
 
         <footer class="text-bg-dark">
             <!-- Primeiro andar - Licensa -->
@@ -109,7 +118,7 @@
                     <i class="fa-solid fa-house fa-2x fa-fw"></i>
                 </a>
                 <!-- Licensa -->
-                <div class="flex-grow-1 text-center align-content-center">&copy; 2025 Petite Guarda</div>
+                <div class="flex-grow-1 text-center align-content-center">&copy; 2025 Petite Guard</div>
                 <!-- Acesso ao topo da página -->
                 <a href="#wrap" class="p-1">
                     <i class="fa-solid fa-circle-up fa-2x fa-fw"></i>
@@ -140,20 +149,20 @@
                 <!-- Menu com links importantes -->
                 <nav>
                     <ul class="list-unstyled">
-
+                    
                         <li><a href="contatos.html">
                                 <i class="fa-solid fa-message"></i> Faça contato
                             </a></li>
                         <li><a href="sobre.html">
                                 <i class="fa-solid fa-circle-info"></i> Sobre o site
                             </a></li>
-                        <li><a href="empresa.html">
+                            <li><a href="empresa.html">
                                 <i class="fa-solid fa-circle-info"></i> Sobre a empresa
                             </a></li>
                         <li><a href="privacidade.html">
                                 <i class="fa-solid fa-lock"></i> Privacidade
                             </a></li>
-                    </ul>
+                </ul>
                 </nav>
 
 
@@ -180,6 +189,7 @@
             document.getElementById("dialogFormBusca").close(); // Fecha o diálogo
         });
     </script>
+    
 
 </body>
 
